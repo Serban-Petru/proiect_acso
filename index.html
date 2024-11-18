@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocoale UDP și TCP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Protocoale UDP și TCP</h1>
+        <button id="themeToggle">Comută Tema Întunecată</button>
+    </header>
+    <main>
+        <section id="udp">
+            <h2>Ce este UDP?</h2>
+            <div class="text_box">
+            <p>
+                User Datagram Protocol (sau UDP, în traducere liberă din engleză Protocolul Datagramelor Utilizator) este un protocol de comunicație pentru calculatoare ce aparține nivelului Transport (nivelul 4 ) al modelului standard OSI.
+
+Împreună cu Internet Protocol (IP), acesta face posibilă livrarea mesajelor într-o rețea. Spre deosebire de protocolul TCP, UDP constituie modul de comunicație fără conexiune. Este similar cu sistemul poștal, în sensul că pachetele de informații (corespondența) sunt trimise în general fără confirmare de primire, în speranța că ele vor ajunge, fără a exista o legătură efectivă între expeditor și destinatar. Practic, UDP este un protocol ce nu oferă siguranța sosirii datelor la destinație (nu dispune de mecanisme de confirmare); totodată nu dispune nici de mecanisme de verificare a ordinii de sosire a datagramelor sau a datagramelor duplicate. UDP dispune, totusi, în formatul datagramelor, de sume de control pentru verificarea integrității datelor sau de informații privind numărul portului pentru adresarea diferitelor funcții la sursa/destinație. 
+        </p></div>
+        <center><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240226104348/UDP-gif.gif" width="600px" height="300px"></center>
+            <ul>
+                <li>orientat către tranzacții - util în aplicații simple de tip întrebare-răspuns cum ar fi DNS</li>
+                <li>este simplu foarte util în aplicații de configurări, precum DHCP</li>
+                <li>lipsa întârzierilor de retransmisie îl pretează pentru aplicații în timp real ca VoIP, jocuri online.</li>
+            </ul>
+        </section>
+        <section id="tcp">
+            <h2>Ce este TCP?</h2>
+            <div class="text_box">
+            <p>
+                TCP (Transmission Control Protocol) este un protocol fiabil care asigură livrarea completă a datelor. Este utilizat 
+                în aplicații precum transferul de fișiere și navigarea web.
+            </p></div>
+            <ul>
+                <li>Garantează livrarea datelor</li>
+                <li>Controlează fluxul și gestionează erorile</li>
+                <li>Utilizat pentru conexiuni sigure</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Protocoale de Rețea Marina Serban-Petru, FIE UTCN, anul 2, sem I</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

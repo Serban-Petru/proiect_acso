@@ -1,0 +1,105 @@
+/* Stiluri generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Tema luminoasă (implicită) */
+body {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Secțiuni */
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    color: #007bff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}
+
+/* Tema întunecată */
+body.dark-mode {
+    background-color: #121212;
+    color: #f9f9f9;
+}
+
+body.dark-mode header {
+    background-color: #222;
+}
+
+body.dark-mode section {
+    background: #1e1e1e;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode footer {
+    background: #1e1e1e;
+}
+
+p{
+    font-size: 20px;
+}
+
+.text_box {
+    border: 2px solid #007bff; /* Bordura albastră */
+    padding: 10px; /* Spațiu între text și marginea chenarului */
+    margin: 20px; /* Spațiu în jurul chenarului */
+    background-color: #f9f9f9; /* Fundal deschis */
+    border-radius: 5px; /* Colțuri rotunjite */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Umbră ușoară */
+    font-size: 1rem; /* Dimensiune text */
+    color: #333; /* Culoarea textului */
+}
+li{
+    text-align: center;
+    list-style-type: none;
+}
+
+
