@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joc TCP: Trimite Pachetele</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header cu butoane de navigație -->
+<header>
+    <h1>Joc TCP: Trimite Pachetele</h1>
+    <nav>
+        <a href="index.html">Acasă</a>
+</header>
+
+<!-- Buton de Dark Mode -->
+<button id="dark-mode-toggle">🌙 Dark Mode</button>
+
+<!-- Conținut principal -->
+<main>
+    <section id="joc-tcp">
+        <h2>Simulează Conexiunea TCP</h2>
+
+        <div class="game-container">
+            <div class="client">
+                <h3>Client</h3>
+                <button id="send-packet-btn">Trimite Pachet</button>
+            </div>
+
+            <div class="server">
+                <h3>Server</h3>
+                <div id="ports" class="ports">
+                    <!-- Porturile serverului vor fi generate dinamic -->
+                </div>
+            </div>
+        </div>
+
+        <p id="message" class="message">Apasă "Trimite Pachet" pentru a începe!</p>
+    </section>
+</main>
+
+<!-- Footer cu datele despre tine -->
+<footer>
+    <p>Nume: <strong>Marian Serban-Petru</strong></p>
+    <p>Grupa: <strong>1122</strong></p>
+</footer>
+
+<script src="script.js"></script>
+<script src="tcp-game.js"></script> <!-- Scriptul special pentru joc -->
+</body>
+</html>
