@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Despre UDP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header cu butoane de navigație -->
+<header>
+    <h1>Protocolul UDP</h1>
+    <nav>
+        <a href="index.html">Acasă</a>
+        
+    </nav>
+</header>
+
+<!-- Buton de Dark Mode -->
+<button id="dark-mode-toggle">🌙 Dark Mode</button>
+
+<!-- Conținut principal -->
+<main>
+    <section id="intro">
+        <h2>Ce este UDP?</h2>
+        <p>UDP (User Datagram Protocol) este un protocol de comunicație folosit pe internet care permite transmiterea rapidă de date, dar fără verificări suplimentare de integritate sau ordonare a pachetelor.</p>
+        <img src="images/udp-intro.png" alt="Reprezentare vizuală a protocolului UDP">
+    </section>
+
+    <section id="caracteristici">
+        <h2>Caracteristici cheie ale UDP</h2>
+        <ul>
+            <li>🚀 **Viteză ridicată**: UDP este mult mai rapid decât TCP deoarece nu necesită confirmarea pachetelor.</li>
+            <li>📡 **Fără control de flux**: Expeditorul trimite pachetele fără a verifica dacă destinatarul le-a primit.</li>
+            <li>📦 **Fără ordonare**: Pachetele de date pot ajunge la destinație într-o ordine diferită față de cea inițială.</li>
+            <li>💡 **Fără retransmisie**: Dacă un pachet se pierde, acesta nu este retrimis.</li>
+            <li>🔍 **Protocol simplu**: Este un protocol mai simplu decât TCP, ceea ce îl face mai rapid.</li>
+        </ul>
+    </section>
+
+    <section id="cum-functioneaza">
+        <h2>Cum funcționează UDP?</h2>
+        <p>UDP trimite pachetele de date direct de la expeditor la destinatar fără a stabili o conexiune prealabilă. Acest lucru îl face foarte rapid, dar mai puțin fiabil decât TCP.</p>
+        <img src="images/udp-flow.png" alt="Fluxul de date UDP">
+    </section>
+
+    <section id="avantaje-dezavantaje">
+        <h2>Avantaje și Dezavantaje ale UDP</h2>
+
+        <div class="box">
+            <h3>✅ Avantaje</h3>
+            <ul>
+                <li>Viteză foarte mare</li>
+                <li>Utilizat în aplicații de streaming și jocuri online</li>
+                <li>Consum redus de resurse</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h3>❌ Dezavantaje</h3>
+            <ul>
+                <li>Pachetele de date pot fi pierdute</li>
+                <li>Fără verificare de erori</li>
+                <li>Fără controlul ordinii pachetelor</li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<!-- Footer cu datele despre tine -->
+<footer>
+    <p>Nume: <strong>Marian Serban-Petru</strong></p>
+    <p>Grupa: <strong>1122</strong></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

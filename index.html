@@ -1,49 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Protocoale UDP și TCP</title>
+    <title>Protocoale TCP și UDP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Protocoale UDP și TCP</h1>
-        <button id="themeToggle">Comută Tema Întunecată</button>
-    </header>
-    <main>
-        <section id="udp">
-            <h2>Ce este UDP?</h2>
-            <div class="text_box">
-            <p>
-                User Datagram Protocol (sau UDP, în traducere liberă din engleză Protocolul Datagramelor Utilizator) este un protocol de comunicație pentru calculatoare ce aparține nivelului Transport (nivelul 4 ) al modelului standard OSI.
 
-Împreună cu Internet Protocol (IP), acesta face posibilă livrarea mesajelor într-o rețea. Spre deosebire de protocolul TCP, UDP constituie modul de comunicație fără conexiune. Este similar cu sistemul poștal, în sensul că pachetele de informații (corespondența) sunt trimise în general fără confirmare de primire, în speranța că ele vor ajunge, fără a exista o legătură efectivă între expeditor și destinatar. Practic, UDP este un protocol ce nu oferă siguranța sosirii datelor la destinație (nu dispune de mecanisme de confirmare); totodată nu dispune nici de mecanisme de verificare a ordinii de sosire a datagramelor sau a datagramelor duplicate. UDP dispune, totusi, în formatul datagramelor, de sume de control pentru verificarea integrității datelor sau de informații privind numărul portului pentru adresarea diferitelor funcții la sursa/destinație. 
-        </p></div>
-        <center><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240226104348/UDP-gif.gif" width="600px" height="300px"></center>
-            <ul>
-                <li>orientat către tranzacții - util în aplicații simple de tip întrebare-răspuns cum ar fi DNS</li>
-                <li>este simplu foarte util în aplicații de configurări, precum DHCP</li>
-                <li>lipsa întârzierilor de retransmisie îl pretează pentru aplicații în timp real ca VoIP, jocuri online.</li>
-            </ul>
-        </section>
-        <section id="tcp">
-            <h2>Ce este TCP?</h2>
-            <div class="text_box">
-            <p>
-                TCP (Transmission Control Protocol) este un protocol fiabil care asigură livrarea completă a datelor. Este utilizat 
-                în aplicații precum transferul de fișiere și navigarea web.
-            </p></div>
-            <ul>
-                <li>Garantează livrarea datelor</li>
-                <li>Controlează fluxul și gestionează erorile</li>
-                <li>Utilizat pentru conexiuni sigure</li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Protocoale de Rețea Marina Serban-Petru, FIE UTCN, anul 2, sem I</p>
+<!-- Header cu 4 butoane -->
+<header>
+    <h1>Protocoale TCP și UDP</h1>
+    <nav>
+        <div class="box"> 
+            <a href="https://en.wikipedia.org/wiki/Port_(computer_networking)">Wiki</a>
+        </div>
+        <a href="tcp.html">Despre TCP</a>
+        <a href="utilitate.html">Utilitate</a>
+        <a href="udp.html">Despre UDP</a>
+        
+
+    </nav>
+</header>
+
+<!-- Buton de Dark Mode -->
+<button id="dark-mode-toggle">🌙 Dark Mode</button>
+
+<!-- Conținut principal -->
+<main>
+    <section id="intro">
+        <h2>Ce sunt TCP și UDP?</h2>
+        <p>TCP (Transmission Control Protocol) și UDP (User Datagram Protocol) sunt protocoale de transport folosite pentru transmiterea datelor pe internet.</p>
+
+    <section id="tcp">
+        <h2>Despre TCP</h2>
+        <p>TCP asigură o conexiune fiabilă, orientată pe conexiune, și garantează că toate pachetele de date sunt primite în ordinea corectă.</p>
+    </section>
+
+    <section id="udp">
+        <h2>Despre UDP</h2>
+        <p>UDP este mai rapid decât TCP, dar nu garantează ordinea pachetelor și nici nu verifică dacă toate pachetele au fost primite.</p>
+        <center><img src="https://media.geeksforgeeks.org/wp-content/uploads/20240226104348/UDP-gif.gif" width="600px" height="300px"></center>    </section>
+
+    </section>
+</main>
+
+<!-- Footer cu datele despre tine -->
+<footer>
+    <div id="container">
+        <p>Nume: <strong>Marian Serban-Petru</strong></p>
+        <p>Grupa: <strong>1122</strong></p>
+    
+        <img src="https://www.utcluj.ro/static/images/logo_site.png" width="150px" height="150px">
+    </div>
     </footer>
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>

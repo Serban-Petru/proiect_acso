@@ -1,16 +1,15 @@
-// Selectează butonul și corpul paginii
-const themeToggle = document.getElementById('themeToggle');
-const body = document.body;
+const darkModeToggle = document.getElementById('dark-mode-toggle');
 
-// Adaugă un eveniment de click pe buton
-themeToggle.addEventListener('click', () => {
-    // Comută între tema întunecată și luminoasă
-    body.classList.toggle('dark-mode');
-    
-    // Actualizează textul butonului
-    if (body.classList.contains('dark-mode')) {
-        themeToggle.textContent = 'Comută Tema Luminoasă';
+const userPreference = localStorage.getItem('dark-mode');
+if (userPreference === 'enabled') {
+    document.body.classList.add('dark-mode');
+}
+
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('dark-mode', 'enabled');
     } else {
-        themeToggle.textContent = 'Comută Tema Întunecată';
+        localStorage.setItem('dark-mode', 'disabled');
     }
 });

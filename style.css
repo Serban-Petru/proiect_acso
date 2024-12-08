@@ -1,105 +1,121 @@
-/* Stiluri generale */
-body {
-    font-family: Arial, sans-serif;
+/* Reset de bază */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    transition: background-color 0.3s, color 0.3s;
+    box-sizing: border-box;
 }
 
-/* Tema luminoasă (implicită) */
 body {
-    background-color: #ffffff;
-    color: #333333;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 header {
     background-color: #007bff;
-    color: white;
-    padding: 1rem;
+    color: #fff;
     text-align: center;
+    padding: 1rem 0;
 }
 
 header h1 {
-    margin: 0;
+    font-size: 2.5rem;
 }
 
-button {
-    margin-top: 1rem;
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+#dark-mode-toggle {
+    display: block;
+    margin: 20px auto;
     padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
     border: none;
     border-radius: 5px;
-    background-color: #333;
-    color: white;
 }
 
-button:hover {
-    background-color: #555;
-}
-
-/* Secțiuni */
 main {
     padding: 20px;
 }
 
 section {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
 }
 
 section h2 {
-    color: #007bff;
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-/* Footer */
+section p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+}
+
 footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: #007bff;
+    color: #fff;
     text-align: center;
-    padding: 1rem;
-    background: #333;
-    color: white;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 1rem;
 }
 
-/* Tema întunecată */
+footer p {
+    margin: 5px 0;
+}
+
+/* Stiluri Dark Mode */
 body.dark-mode {
-    background-color: #121212;
-    color: #f9f9f9;
+    background-color: #333;
+    color: #f4f4f9;
 }
 
 body.dark-mode header {
     background-color: #222;
 }
 
-body.dark-mode section {
-    background: #1e1e1e;
-    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+body.dark-mode nav a {
+    color: #f4f4f9;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background-color: #555;
+    color: #f4f4f9;
 }
 
 body.dark-mode footer {
-    background: #1e1e1e;
+    background-color: #222;
 }
 
-p{
-    font-size: 20px;
+.box{
+    background-color: rgb(88, 233, 88);
 }
-
-.text_box {
-    border: 2px solid #007bff; /* Bordura albastră */
-    padding: 10px; /* Spațiu între text și marginea chenarului */
-    margin: 20px; /* Spațiu în jurul chenarului */
-    background-color: #f9f9f9; /* Fundal deschis */
-    border-radius: 5px; /* Colțuri rotunjite */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Umbră ușoară */
-    font-size: 1rem; /* Dimensiune text */
-    color: #333; /* Culoarea textului */
-}
-li{
-    text-align: center;
-    list-style-type: none;
-}
-
-
