@@ -8,7 +8,6 @@
 </head>
 <body>
 
-<!-- Header cu butoane de navigație -->
 <header>
     <h1>Protocolul TCP</h1>
     <nav>
@@ -16,10 +15,8 @@
     </nav>
 </header>
 
-<!-- Buton de Dark Mode -->
 <button id="dark-mode-toggle">🌙 Dark Mode</button>
 
-<!-- Conținut principal -->
 <main>
     <section id="intro">
         <h2>Ce este TCP?</h2>
@@ -30,21 +27,21 @@
     <section id="caracteristici">
         <h2>Caracteristici cheie ale TCP</h2>
         <ul>
-            <li>🔗 **Conexiune fiabilă**: TCP asigură că toate pachetele ajung la destinație, iar dacă unul se pierde, se retrimite automat.</li>
-            <li>📦 **Divizarea datelor**: Datele sunt împărțite în pachete mai mici care sunt apoi trimise către destinație.</li>
-            <li>📡 **Controlul fluxului**: Asigură că expeditorul nu trimite mai multe date decât poate primi destinatarul.</li>
-            <li>🔍 **Detectarea erorilor**: TCP verifică dacă pachetele au fost corupte și cere retrimiterea lor, dacă este necesar.</li>
-            <li>🕒 **Ordonarea pachetelor**: Asigură că pachetele de date sunt reordonate în secvența corectă la destinație.</li>
+            <li>🔗 Conexiune fiabilă: TCP asigură că toate pachetele ajung la destinație, iar dacă unul se pierde, se retrimite automat.</li>
+            <li>📦 Divizarea datelor: Datele sunt împărțite în pachete mai mici care sunt apoi trimise către destinație.</li>
+            <li>📡 Controlul fluxului: Asigură că expeditorul nu trimite mai multe date decât poate primi destinatarul.</li>
+            <li>🔍 Detectarea erorilor: TCP verifică dacă pachetele au fost corupte și cere retrimiterea lor, dacă este necesar.</li>
+            <li>🕒 Ordonarea pachetelor: Asigură că pachetele de date sunt reordonate în secvența corectă la destinație.</li>
         </ul>
     </section>
 
     <section id="cum-functioneaza">
         <h2>Cum funcționează TCP?</h2>
-        <p>TCP stabilește o conexiune între două dispozitive utilizând un proces numit **handshake în trei pași**:</p>
+        <p>TCP stabilește o conexiune între două dispozitive utilizând un proces numit handshake în trei pași:</p>
         <ol>
-            <li>📨 **SYN** (Synchronize) - Dispozitivul A cere să inițieze o conexiune cu dispozitivul B.</li>
-            <li>📨 **SYN-ACK** (Synchronize-Acknowledge) - Dispozitivul B confirmă cererea și solicită o confirmare.</li>
-            <li>📨 **ACK** (Acknowledge) - Dispozitivul A confirmă conexiunea, iar transferul de date poate începe.</li>
+            <li>📨 SYN (Synchronize) - Dispozitivul A cere să inițieze o conexiune cu dispozitivul B.</li>
+            <li>📨 SYN-ACK (Synchronize-Acknowledge) - Dispozitivul B confirmă cererea și solicită o confirmare.</li>
+            <li>📨 ACK (Acknowledge) - Dispozitivul A confirmă conexiunea, iar transferul de date poate începe.</li>
         </ol>
         <img class="border_green" src="https://media.licdn.com/dms/image/v2/D5622AQEcdrNamz1CcQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1716745272718?e=2147483647&v=beta&t=CN0akrZHFc_Ecq0TngDoVaJ12jlt_ISv3-MzZQ0SFUw" width="450" alt="Handshake TCP">
     </section>
@@ -71,7 +68,6 @@
     </section>
 </main>
 
-<!-- Footer cu datele despre tine -->
 <footer>
     <p>Nume: <strong>Marian Serban-Petru</strong></p>
     <p>Grupa: <strong>1122</strong></p>
